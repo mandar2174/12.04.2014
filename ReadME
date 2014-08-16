@@ -1,0 +1,17 @@
+
+You need Apache Ant(TM) version 1.8.2 installed on your system
+
+Extract the SampleBot.zip to any location of your choice.
+
+Through command line prompt/Terminal in linux go the Directory where you have extracted the .zip file.
+
+ 
+Give the Command as
+
+>ant
+
+example
+
+ashish@ashish-HP-Pavilion-dv4-Notebook-PC:~/workspace/SampleBot$ ant
+
+In my case i have extracted in workspace Directory
