@@ -53,6 +53,17 @@ what is difference between serializationa and externization in java?which is bet
 difference between inner class and static inner class
 what is interface in the java and when to use the abstract class and interface?
 externization interfaced method
+can we call the start method of thread twice if not then why?
+explain different type of set ,list and map in the java.
+what is deadlock write the deadlock code 
+how you will avoid the deadlock 
+which are tools used for finding the memory leak in java
+how do you make the list as serialize 
+write the program to keep the unique element in the string and sort based on the ascending order (iunput:mandar,Mandar,Java,data,cat,Cat output:cat,data,Java,mandar)
+write the program to implmene the lined list and revevers the linked list
+write the program to revevers the list element
+
+
 
 
 Designe patter:
@@ -93,7 +104,14 @@ difference between vector and arraylist
 difference between hashmap and hashset
 difference between weekhashmap and hashmap
 implement the priority queue using collection?
-what is used of join and fork and in which jdk this feature added 
+what is used of join and fork and in which jdk this feature added  
+what is used of equal and hashcode
+difference between equal and == when used with object
+how string is created in the java different ways of creating the string
+what is used of string pool why string is immutable advantage of that?
+which is best way to consider the key for hashmap while storing the element
+and if you want to stored object as key what is required method to be consider for that?
+suppose i need to stored the password in particulare datatype which datatype we should consider for that
 
 SQL:
 write the query to get n max salary ?
