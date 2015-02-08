@@ -62,9 +62,22 @@ how do you make the list as serialize
 write the program to keep the unique element in the string and sort based on the ascending order (iunput:mandar,Mandar,Java,data,cat,Cat output:cat,data,Java,mandar)
 write the program to implmene the lined list and revevers the linked list
 write the program to revevers the list element
+Can we create abstract classes without any abstract methods 
+How to prevent a method from being overridden?
 
 
-
+Exception:
+what is exception and why is need to handle
+what is difference between error and exception
+what is main class for all exception
+what is check and uncheck exception explain with exception
+difference between throw and throws keyword
+can we write try block withoud catch block 
+what is used of final block and it is mandatory to declared this with try block
+write the user defined exception and call from the program(program implmentation)
+what are best practices for exception handler
+Incase, there is a return at the end of try block, will execute finally block? 
+when final block will not execute(situation)
 
 Designe patter:
 difference between singleton and static class
