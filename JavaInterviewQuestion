@@ -1,0 +1,126 @@
+
+Java Interview Question
+oops:
+
+1)what are the oops concept and how we can achieve in the java
+2)what is mean by polymorphism
+3)Type of polymorphism and java support which polymorphism
+5)which version of jdk you used and what are changes made after jdk1.5(newly added class)
+6)which gc (algorithm used in the java) jdk1.7
+7)why java not support multiple inheritance
+8)what is base class for all object in java
+9)what are the method avaibale in the object class
+10)what is the jdk,jre,jvm
+11)suppose i have made one application in java on windows and now i need to run that application in 
+linux box what need to be install for running that application
+12)jdk is platfrom independent or not
+what is mean by platform independence.
+
+
+Thread:
+what is thread and why to use the thread
+in java how we can implement the thread ?and which is better and why?
+method available in the thread class
+why wait and notify method defined in the object class not in the thread class
+use of wait and notify method in the java 
+what is daemon thread and how it is different from the normal thread
+can we make the running thread as daemon thread if not what exception we will get
+how to make the thread as daemon thread
+why wait and notify method should called from the synchronization block
+which are the concurrent api available in the java? and which are you used in the project and in which case?
+how to stop the thread?write the program to stop the thread?
+write a program to implement the producer and consumer problem?
+when to create the thread using extending the thread class and using implementing the runnable interface?what is marker interface in java?
+life cycle of the thread
+what is difference betweent start and run method of the thread class
+what is difference between sleep and wait method in java
+what is callable interface and when to use?
+difference between callable and runnable interface
+write a program to use the executor api in java(executeservice-worker thread)
+use of synchronize keyword in the java ? type of it(method level,block level synchronize)
+what is object level synchronized and class level synchronize
+what are the best practices to use the wait method 
+what is advantages/disadvantage of synchronize keyword?
+explain the reentrantLock in the java and use of it?what is advantages of it over the synchronize 
+type of reentrant class
+what is transient and volatile keywork in the java why they used?
+what is other way to implement the transient in the java
+write the program to used the serialization/deserialize of employee object.
+what is cloning in java?type of cloning?
+java by default support which clone type and how?
+write the program to implement the deep copy 
+what is difference between serializationa and externization in java?which is better to use in which situtaion.
+difference between inner class and static inner class
+what is interface in the java and when to use the abstract class and interface?
+externization interfaced method
+
+
+Designe patter:
+difference between singleton and static class
+what is singleton class write the program to implement that.
+types of the desing pattern
+program to implemen the factory designe pattern.
+program to implement the protorype desing pattern
+program to implement the facade desing pattern
+what is composition,aggregation and association explain with the example
+
+
+Collection:
+what are the collection classes avaiable in the java 
+when to use the hashset and linkedhashset
+when to use the treeset
+for making sorting in the treeset which interface used by the treeset
+write program to implement the arraylist?
+write program to implement the hashmap?
+write program to implement the arraylist?
+write program to implement the hashmap with user defined key?
+how hashmap work?explain the get and put method of the hashmap(internal implmenation)
+what is iterator in the java?
+write the program to iterat on the hashmap?
+what is fail -fast and fail-safe iterator
+if we are iterating on the list and same type deleting the element from the list using list.remove method whether it will 
+work or not?if not which exception will get and how to overcome that?
+write the program to implement min and max heap ?
+write the program to implement dfs and bfs?
+write the program to implement stack/queue ?
+write the program to find the palindrom string ?
+write the program to find the number of palindrom string in given large string?
+write the program to detect the loop in the linked list?
+difference between compartor and comparable interface in java.
+write the program to sort the employee based on sorting using compartor interface.
+when to used the compartor and comparable interface
+difference between vector and arraylist
+difference between hashmap and hashset
+difference between weekhashmap and hashmap
+
+SQL:
+write the query to get n max salary ?
+what is inner join ,outer join 
+type of outer join ?
+find the name of employee whose name start with a group by department
+write cursor for update balance by 100 rupee to each employee after every month
+
+
+Shell
+what is shell?
+what is used of awk command
+find the linux word in the all file 
+write the shell script to print the fibonacci series
+how to find the disk space usage/disk free 
+what is softlink and hardlink and when to use which 
+what is command to find the process using which port
+used of sed command
+which shell you used?bash/ksh/csh
+life cycle of the process
+
+
+Project:
+what is your current project which technology used
+what is your role in that.
+
+
+
+
+
+
+
