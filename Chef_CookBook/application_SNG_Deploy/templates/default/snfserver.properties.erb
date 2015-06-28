@@ -1,0 +1,311 @@
+# SNG Configuration File
+
+http.proxy=10.203.193.227
+http.port=80
+http.proxyUser=bgh33503
+http.proxyPassword=MayurOmkar2174
+
+domain.name=http://sngserver.com:8080/snf/
+
+#facebook app
+fb.client.id=347144158754317
+fb.client.secret=137a3fdc0ebc7b045570574bc0593b83
+
+#Googleplus app
+gplus.client.id=283822345233.apps.googleusercontent.com
+gplus.client.secret=EdPLpmXC-xaqdZqP0wegiayX
+
+#LinkedIN APP
+linkedin.clientkey=uqyqrvs3r4rb
+linkedin.client.secret=tBrlBqCmJyHEFObU
+
+#TWITTER APP
+twitter.oauth.consumerkey=Nqe14IAqYbFOUcH4iDg
+twitter.oauth.consumer.secretkey=M2zjKb1wkjoShYfChDqLTLa3OOV478RnBd3L97nMk
+
+#YAMMER APP
+yammer.clientId=1JpRow5SnD2sm4IcTxB2FA
+yammer.clientSecret=sLMBlmQuRMBFXfKDOvtSPLQSW8XRH8i9MoHwTxjxPlk
+yammer.att.clientId=w8M00AtjG2pfcdfhN1Htw
+yammer.att.clientSecret=tIJkRQ64kAW8AfiB8NWjT1Gux5zb36gARJ1bIJtlU
+
+#SEARCH
+search.searchmaxresults=10
+search.seemorecount=10
+search.start=5
+search.linkedinSeemorecount=5
+
+#facebook Event Limit
+facebook.event.limit=5000
+
+#UC FED CONFIGURATIONS
+snf.ucfedurl=http://212.166.27.226:18082/ucfedApplEnablement/CheckPolicy
+snf.ucfed.skip=false
+snf.servicename=SocialNetwork
+snf.direction=0
+snf.devtype=SNG
+snf.desturi=any@facebook.com
+snf.fbdomain=any@facebook.com
+snf.gplusdomain=any@plus.google.com
+snf.twitterdomain=any@twitter.com
+snf.linkedindomain=any@linkedin.com
+snf.yammerdomain=any@yammer.com
+
+#AeroGear Info
+snf.aero.url=http://sngserver.com:9095/aerogear-unifiedpush-server
+snf.aero.appid=0875c6f2-ec4f-46f8-87b7-02c3544959fe
+snf.aero.secret=837001e2-4714-43bc-a5c4-63356d6e2149
+
+#Notification Info
+snf.notif.interval=0/5 * * * * ?
+
+#UPDATES COUNT
+lastupdates.limit=25
+
+#Facebook FriendList URLS
+
+facebook.friendlist.api=https://graph.facebook.com/fql?q=
+facebook.graph.url=http://graph.facebook.com/
+facebook.fql.query=SELECT name, uid, pic_square, current_location, online_presence FROM user WHERE uid IN(SELECT uid2 FROM friend WHERE uid1=me())
+
+
+
+#Facebook Name and Pic URL
+facebook.namepic.api=https://graph.facebook.com/me?fields=id,name,picture,location,birthday,email,gender
+
+#Facebook userlast updates
+facebook.user.last.updates=https://graph.facebook.com/me/feed?fields=comments.limit(1).summary(true),likes.limit(1).summary(true),application,actions,caption,coordinates,created_time,description,from.picture,from.name,full_picture,id,message,message_tags,name,is_hidden,picture,place,privacy,properties,shares,story,story_tags,type,updated_time,source,via,link,status_type,to
+
+#Facebook user Wall updates
+facebook.user.wall.updates=https://graph.facebook.com/me/home?fields=comments.limit(1).summary(true),likes.limit(1).summary(true),application,actions,caption,coordinates,created_time,description,from.picture,from.name,full_picture,id,message,message_tags,name,is_hidden,picture,place,privacy,properties,shares,story,story_tags,type,updated_time,source,via,link,status_type,to
+
+#facebook events API
+
+facebook.graph.api=https://graph.facebook.com/
+facebook.personal.events=me/events?fields=description,end_time,start_time,rsvp_status,location,id,name,privacy,owner,invited.fields(name,picture,rsvp_status,id)
+facebook.event.access.token=&access_token=
+facebook.not.replied.events=me/events?fields=description,end_time,start_time,rsvp_status,location,id,name,privacy,owner,invited.fields(name,picture,rsvp_status,id)&type=not_replied&access_token=
+facebook.limit=&limit=
+facebook.create.event=/events
+facebook.invited.friends=/invited
+
+#facebook event change Status Action API
+facebook.change.event.status.api=https://graph.facebook.com/{0}/{1}
+
+#facebook search API
+facebook.search.api=https://graph.facebook.com/search?fields=name,picture&type=user&q=
+
+#facebok userprofile api
+facebook.user.profile.api=?fields=id,name,picture,gender&access_token=
+
+#facebook me api to fecth User Id
+facebook.user.profile=https://graph.facebook.com/me?fields=id&access_token=
+
+#facebook post api
+facebook.post.update.api=https://graph.facebook.com/{0}/feed
+
+#facebook delete api
+facebook.delete.update.api=https://graph.facebook.com/{0}?access_token=
+
+facebook.delete.event.api=https://graph.facebook.com/{0}?access_token=
+
+#Facebook Likes
+facebook.feed.likes.api=https://graph.facebook.com/{0}/likes?access_token=
+
+#Facebook Comments
+facebook.feed.comments.api=https://graph.facebook.com/{0}/comments?fields=user_likes,like_count,created_time,can_remove,message,from.id,id,from.name,from.picture&access_token=
+
+#facebook get Notifications
+
+facebook.get.notifications.api=https://graph.facebook.com/me/notifications?access_token=
+
+facebook.notficationid.url={0}?unread=false
+
+#facebook friend request notifications
+
+facebook.get.friend.request.notifications.api=https://graph.facebook.com/me/friendrequests?access_token=
+
+#GooglePlus Friendlist API
+
+googleplus.friendlist.api=https://www.googleapis.com/plus/v1/people/me/people/visible
+
+#GooglePlus Latest Updates API
+googleplus.latest.updates.api=https://www.googleapis.com/plus/v1/people/me/activities/public
+
+#GooglePlus Wall Updates API
+googleplus.wall.updates.api=https://www.googleapis.com/plus/v1/people/{0}/activities/public
+
+#Googleplus Name and Pic API
+googleplus.userinfo.api=https://www.googleapis.com/oauth2/v1/userinfo?access_token=
+
+#GooglePlus Search List API
+googleplus.searchlist.api=https://www.googleapis.com/plus/v1/people
+
+#Googleplus Search User Profile Info API
+googleplus.searchuser.profile.api=https://www.googleapis.com/plus/v1/people/
+googleplus.searchuser.selected.profile.param=?fields=displayName,gender,image,placesLived,birthday&access_token=
+
+#Google calendar
+google.calendar.api=https://www.googleapis.com/calendar/v3/calendars/
+google.access.token.url=/events?access_token=
+
+#Twitter Friendlist API
+twitter.friendlist.api=https://api.twitter.com/1.1/friends/list.json
+
+#Twitter Followers API
+twitter.followers.api=https://api.twitter.com/1.1/followers/list.json
+
+#Twitter Latest Updates API
+twitter.latest.updates.api=https://api.twitter.com/1.1/statuses/user_timeline.json
+
+#Twitter Private Messages API
+twitter.private.messages.api=https://api.twitter.com/1.1/direct_messages.json
+
+#Twitter Private Sent Messages API
+twitter.private.sent.messages.api=https://api.twitter.com/1.1/direct_messages/sent.json
+
+#Twitter Name and Pic
+twitter.userinfo.api=https://api.twitter.com/1.1/users/show.json
+
+#Twitter Search List API
+twitter.searchlist.api=https://api.twitter.com/1.1/users/search.json
+
+#Twitter Post Update API
+twitter.post.update.api=https://api.twitter.com/1.1/statuses/update.json
+
+#Twitter Post Message API
+twitter.post.message.api=https://api.twitter.com/1.1/direct_messages/new.json
+
+#Twitter Delete Update API
+twitter.delete.update.api=https://api.twitter.com/1.1/statuses/destroy/{0}.json
+
+#Twitter Get WallUpdates API
+twitter.get.wallupdate.api=https://api.twitter.com/1.1/statuses/home_timeline.json
+
+#LinkedIn FriendList API 
+linkedIn.friendList.api=https://api.linkedin.com/v1/people/~/connections:(id,first-name,last-name,current-status,location,picture-url)
+
+#LinkedIn User Profile API
+linkedIn.user.profile.api=https://api.linkedin.com/v1/people/~:(id,picture-url,first-name,last-name,headline)
+
+#LinkedIn user Last Updates API
+linkedIn.last.updates.api=https://api.linkedin.com/v1/people/~/network/updates?type=CMPY&type=CONN&type=JGRP&type=PICT&type=PFOL&type=PRFX&type=RECU&type=PRFU&type=SHAR&type=VIRL&scope=self&oauth2_access_token=
+
+#LinkedIn user Wall Updates API
+linkedIn.wall.updates.api=https://api.linkedin.com/v1/people/~/network/updates?type=CMPY&type=CONN&type=JGRP&type=PICT&type=PRFX&type=RECU&type=PRFU&type=SHAR&type=VIRL&
+
+#LinkedIn Search API
+linkedIn.search.api=https://api.linkedin.com/v1/people-search:(people:(id,first-name,last-name,picture-url),num-results)?
+
+#LinkedIn Search User Profile Info
+linkedIn.search.user.profile.info.api=https://api.linkedin.com/v1/people/id=
+linkedIn.search.user.profile.info.api.params=:(id,picture-url,first-name,last-name,headline,location:(country:(code),name),industry,num-connections,positions)
+
+#LinkedIn JOB API
+linkedIn.job.search.api=https://api.linkedin.com/v1/job-search:(jobs:(id,customer-job-code,active,posting-date,expiration-date,posting-timestamp,expiration-timestamp,company:(id,name),position:(title,location,job-functions,industries,job-type,experience-level),skills-and-experience,description-snippet,description,salary,job-poster:(id,first-name,last-name,headline),referral-bonus,site-job-url,location-description))?format=json
+
+#LinkedIn View Profile API
+linkedIn.view.profile.api=https://api.linkedin.com/v1/people/~:(id,picture-url,first-name,publications,patents:(id,status,office,number,title,inventors,date,url,summary),main-address,phone-numbers,date-of-birth,courses,volunteer,languages,certifications,last-name,interests,skills,educations,headline,email-address,location:(country:(code),name),industry,num-connections,summary,positions)
+
+#LinkedIN View Groups API
+linkedIn.view.groups.api=https://api.linkedin.com/v1/people/~/group-memberships:(group:(id,name,short-description,num-members,category,site-group-url,small-Logo-url))
+
+#LinkedIN Address Book Profile INfo API
+linkedIn.address.book.profile.info.api=https://api.linkedin.com/v1/people/id=
+linkedIn.address.book.profile.info.api.param=:(id,picture-url,first-name,last-name,headline,location:(country:(code),name),industry,num-connections,positions)
+
+#LinkedIn Share Update API
+linkedIn.share.update.api=https://api.linkedin.com/v1/people/~/shares
+
+#Linked In Post Private Message
+linkedIn.post.message.api=https://api.linkedin.com/v1/people/~/mailbox
+
+
+#Yammer Post Message API
+yammer.post.message.api=https://www.yammer.com/api/v1/messages.json?
+
+#Yammer Delete Message API
+yammer.delete.message.api=https://www.yammer.com/api/v1/messages/
+
+#Yammer Sent Messages API
+yammer.sent.messages.api=https://www.yammer.com/api/v1/messages/sent.json?access_token=
+
+#Yammer Private Messages API
+yammer.private.messages.api=https://www.yammer.com/api/v1/messages/private.json?access_token=
+
+#Yammer View All messages API
+yammer.viewall.messages.api=https://www.yammer.com/api/v1/messages.json?threaded=true&access_token=
+
+#Yammer User Info API
+yammer.userinfo.api=https://www.yammer.com/api/v1/users/
+#Yammer json format
+yammer.json.format = &format=json
+
+# Yammer Notifications
+yammer.notifications.api = https://www.yammer.com/api/v1/streams/notifications.json?access_token=
+
+#Yammer Followers
+yammer.followers.api=https://www.yammer.com/api/v1/users/followed_by/{0}.json
+
+#Yammer Following
+yammer.following.api=https://www.yammer.com/api/v1/users/following/{0}.json
+
+#Yammer Get Comments
+yammer.thread.comments.api=https://www.yammer.com/api/v1/messages/in_thread/{0}.json?access_token=
+
+#Linkedin Likes
+linkedin.newsfeed.likes.api=https://api.linkedin.com/v1/people/~/network/updates/key=
+
+#Linkedin Comments
+linkedin.newsfeed.comments.api=https://api.linkedin.com/v1/people/~/network/updates/key=
+
+#Facebook OAuth Token URLS
+facebook.code.request.url=http://www.facebook.com/dialog/oauth
+facebook.token.request.url=https://graph.facebook.com/oauth/access_token
+facebook.scope=email,publish_actions,user_about_me,user_actions.books,user_actions.music,user_actions.news,user_actions.video,user_activities,user_birthday,user_education_history,user_events,user_games_activity,user_groups,user_hometown,user_interests,user_likes,user_location,user_notes,user_photos,user_questions,user_relationship_details,user_relationships,user_religion_politics,user_status,user_subscriptions,user_videos,user_website,user_work_history,friends_about_me,friends_actions.books,friends_actions.music,friends_actions.news,friends_actions.video,friends_activities,friends_birthday,friends_education_history,friends_events,friends_games_activity,friends_groups,friends_hometown,friends_interests,friends_likes,friends_location,friends_notes,friends_photos,friends_questions,friends_relationship_details,friends_relationships,friends_religion_politics,friends_status,friends_subscriptions,friends_videos,friends_website,friends_work_history,create_event,friends_online_presence,manage_friendlists,manage_notifications,publish_stream,read_friendlists,read_insights,read_stream,rsvp_event,status_update,user_online_presence,read_requests
+
+#GooglePlus  OAuth Token URLS
+googleplus.code.request.url=https://accounts.google.com/o/oauth2/auth
+googleplus.token.request.url=https://accounts.google.com/o/oauth2/token
+googleplus.scope=https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.readonly
+googleplus.access.type=offline
+googleplus.response.type=code
+googleplus.grant.type=authorization_code
+googleplus.approval.prompt=force
+googleplus.grant.type.refresh=refresh_token
+
+#LinkedIN OAuth Token URLS
+linkedin.code.request.url=https://www.linkedin.com/uas/oauth2/authorization
+linkedin.token.request.url=https://www.linkedin.com/uas/oauth2/accessToken
+linkedin.response.type=code
+linkedin.scope=r_fullprofile,r_emailaddress,r_network,r_contactinfo,rw_nus,rw_groups,w_messages
+linkedin.grant.type=authorization_code
+
+#Twitter OAuth Token URLS
+twitter.oauth.signature.method=HMAC-SHA1
+twitter.request.token.url=https://api.twitter.com/oauth/request_token
+twitter.oauth.authentication.url=https://api.twitter.com/oauth/authorize?oauth_token=
+twitter.accesstoken.url=https://api.twitter.com/oauth/access_token
+
+#yammer OAuth Token URLS
+
+yammer.oauth.url=https://www.yammer.com/dialog/oauth?
+yammer.clientid=client_id=
+yammer.accesstoken.url=https://www.yammer.com/oauth2/access_token.json?
+yammer.client.secret=&client_secret=
+yammer.code=&code=
+
+#TimeLIne Likes
+snf.user.timeline.likes.limit=25
+likes.count=20
+
+#TimeLIne Comments
+snf.user.timeline.comments.limit=25
+comments.count=20
+
+#Friends Configuration Count for G+
+googleplus.friends.count=5
+
+#Friends Wall Updates Limit
+googleplus.friends.wall.updates=5
+

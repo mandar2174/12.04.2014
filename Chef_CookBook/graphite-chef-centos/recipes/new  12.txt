@@ -1,0 +1,74 @@
+Debuggind the Recipes:
+
+Chef::Log.info('some useful information')
+
+/etc/yum.repos.d
+
+
+
+Expected process to exit with [0], but received '200'
+---- Begin output of /usr/bin/python /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.6.2/lib/chef/provider/package/yum-dump.py --installed --
+STDOUT:
+STDERR: yum-dump Locking Error! Couldn't obtain an exclusive yum lock in 10 seconds. Giving up.
+---- End output of /usr/bin/python /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.6.2/lib/chef/provider/package/yum-dump.py --installed ----
+Ran /usr/bin/python /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.6.2/lib/chef/provider/package/yum-dump.py --installed returned 200←[0m
+
+
+Error while installing the graphite using the bootstrap:
+http://stackoverflow.com/questions/19894708/cant-start-carbon-12-04-python-error-importerror-cannot-import-name-daem
+
+Solution:
+root@A1-001:
+1)/opt# /opt/graphite/bin/carbon-cache.py start Traceback (most recent call last): File "/opt/graphite/bin/carbon-cache.py", line 28, in from carbon.util import run_twistd_plugin File "/opt/graphite/lib/carbon/util.py",
+ line 19, in from twisted.scripts._twistd_unix import daemonize ImportError: cannot import name daemonize and resolved it with the following:
+ $ apt-get install python-pip 
+ $ pip install daemonize 
+  then I opened /opt/graphite/lib/carbon/util.py and 
+ changed "from twisted.scripts._twistd_unix 
+  to "import daemonize"
+ 
+ Start the graphite dashboard:
+PYTHONPATH=`pwd`/whisper ./bin/run-graphite-devel-server.py --libs=`pwd`/webapp/  --port 8001  /opt/graphite/ 
+
+ 2)Add the edit /etc/httpd/conf/httpd.conf
+ and append the content to file
+ <VirtualHost *:80>
+    ServerName graphite.4aiur.net
+    DocumentRoot "/opt/graphite/webapp"
+    CustomLog /var/log/httpd/graphite.4aiur.net_access_log combined
+
+    <Location "/">
+        SetHandler python-program
+        PythonPath "['/opt/graphite/webapp'] + ['/usr/lib/python/site-packages/'] + sys.path"
+        PythonHandler django.core.handlers.modpython
+        SetEnv DJANGO_SETTINGS_MODULE graphite.settings
+        PythonDebug Off
+        PythonAutoReload Off
+    </Location>
+    
+    <Location "/content/">
+        SetHandler None
+    </Location>
+    
+    <Location "/media/">
+        SetHandler None
+    </Location>
+    alias /media/ /usr/lib/python2.6/site-packages/django/contrib/admin/media/
+</VirtualHost>
+
+
+3)Installed the yum install mod_python
+because while restarting the apache2 it's giving the error
+ Starting httpd: Syntax error on line 236 of /etc/httpd/conf/httpd.conf:
+Invalid command 'PythonPath', perhaps misspelled or defined by a module not included in the server configuration
+
+
+4)
+synch the db 
+cd /opt/graphite/webapp/graphite
+
+$  sudo python manage.py syncdb
+
+
+ 
+ 
