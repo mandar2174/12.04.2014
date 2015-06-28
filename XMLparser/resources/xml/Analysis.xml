@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Analysis>
+	<Profiles>
+		<Profile id="1">
+			<Entity id="001" type="time series/cross sectional">
+				<Properties key="Name"> E1</Properties>
+				<Properties key="DataSourceType">table</Properties>
+				<Properties key="DataSourceID">ds1</Properties>
+
+
+				<Metric id="m1">
+					<Properties key="Name">M1</Properties>
+					<Properties key="DataSourceType">table</Properties>
+					<Properties key="DataSourceID">ds1</Properties>
+				</Metric>
+				<Metric id="m3">
+					<Properties key="Name">M2</Properties>
+					<Properties key="DataSourceType">table</Properties>
+					<Properties key="DataSourceID">ds1</Properties>
+				</Metric>
+
+
+				<Dimension id="d1">
+					<Properties key="Name">D1</Properties>
+					<Properties key="DataSourceType">table</Properties>
+					<Properties key="DataSourceID">ds1</Properties>
+				</Dimension>
+				<Dimension id="d2">
+					<Properties key="Name">D2</Properties>
+					<Properties key="DataSourceType">table</Properties>
+					<Properties key="DataSourceID">ds2</Properties>
+				</Dimension>
+
+			</Entity>
+			<Entity id="002" type="time series/cross sectional">
+				<Properties key="Name">E2</Properties>
+				<Properties key="DataSourceType">table</Properties>
+				<Properties key="DataSourceID">ds2</Properties>
+
+				<Metric id="m2">
+					<Properties key="Name">M3</Properties>
+					<Properties key="DataSourceType">table</Properties>
+					<Properties key="DataSourceID">ds1</Properties>
+				</Metric>
+				<Metric id="m4">
+					<Properties key="Name">M4</Properties>
+					<Properties key="DataSourceType">table</Properties>
+					<Properties key="DataSourceID">ds1</Properties>
+				</Metric>
+
+
+
+				<Dimension id="d3">
+					<Properties key="Name">D3</Properties>
+					<Properties key="DataSourceType">table</Properties>
+					<Properties key="DataSourceID">ds1</Properties>
+				</Dimension>
+				<Dimension id="d4">
+					<Properties key="Name">D4</Properties>
+					<Properties key="DataSourceType">table</Properties>
+					<Properties key="DataSourceID">ds1</Properties>
+				</Dimension>
+
+			</Entity>
+			<AnalysisPacks>
+				<AnalysisPack>
+					<AnalysisPackID>ap1</AnalysisPackID>
+				</AnalysisPack>
+				<AnalysisPack>
+					<AnalysisPackID>ap2</AnalysisPackID>
+				</AnalysisPack>
+				<AnalysisPack>
+					<AnalysisPackID>ap2</AnalysisPackID>
+				</AnalysisPack>
+			</AnalysisPacks>
+
+		</Profile>
+	</Profiles>
+	<AnalysisPackConfiguration>
+		<AnalysisPackDetail id="ap1">
+			<Properties key="Name">AP1</Properties>
+			<Properties key="DataSourceType">table</Properties>
+			<Properties key="DataSourceID">ds1</Properties>
+
+		</AnalysisPackDetail>
+
+		<AnalysisPackDetail id="ap2">
+			<Properties key="Name">AP2</Properties>
+			<Properties key="DataSourceType">table</Properties>
+			<Properties key="DataSourceID">ds1</Properties>
+
+		</AnalysisPackDetail>
+
+		<AnalysisPackDetail id="ap3">
+			<Properties key="Name">AP3</Properties>
+			<Properties key="DataSourceType">table</Properties>
+			<Properties key="DataSourceID">ds1</Properties>
+		</AnalysisPackDetail>
+
+		<AnalysisPackDetail id="ap4">
+			<Properties key="Name">AP4</Properties>
+			<Properties key="DataSourceType">table</Properties>
+			<Properties key="DataSourceID">ds1</Properties>
+		</AnalysisPackDetail>
+
+		<AnalysisPackDetail id="ap5">
+			<Properties key="Name">AP5</Properties>
+			<Properties key="DataSourceType">table</Properties>
+			<Properties key="DataSourceID">ds1</Properties>
+
+		</AnalysisPackDetail>
+
+	</AnalysisPackConfiguration>
+
+	<DataSources>
+		<DataSource type="table">
+			<DataSourceDetail id="dscfid1">
+				<Properties key="DBType">oracle</Properties>
+				<Properties key="UserName">root</Properties>
+				<Properties key="Password">root</Properties>
+				<Properties key="MachineIP">10.112.78.23</Properties>
+				<Properties key="MachinePort">12345</Properties>
+				<Properties key="DBVersion">ora11g</Properties>
+				<Properties key="TableName">table1</Properties>
+			</DataSourceDetail>
+
+			<DataSourceDetail id="dscfid4">
+				<Properties key="DBType">mysql</Properties>
+				<Properties key="UserName">root</Properties>
+				<Properties key="Password">root</Properties>
+				<Properties key="MachineIP">10.112.78.23</Properties>
+				<Properties key="MachinePort">3350</Properties>
+				<Properties key="DBVersion">mysql</Properties>
+				<Properties key="TableName">table1</Properties>
+			</DataSourceDetail>
+		</DataSource>
+		<DataSource type="file">
+			<DataSourceDetail id="dscfid2">
+				<Properties key="FileType">txt</Properties>
+				<Properties key="FilePath">tmp</Properties>
+				<Properties key="UserName">root</Properties>
+				<Properties key="Password">root</Properties>
+				<Properties key="MachineIP">10.112.78.23</Properties>
+			</DataSourceDetail>
+		</DataSource>
+		<DataSource type="hdfs">
+			<DataSourceDetail id="dscfid3">
+				<Properties key="HdfsPath">hdfs://usr/local/hdfs/</Properties>
+				<Properties key="HdfsFileName">hdfsoutput.txt</Properties>
+				<Properties key="MachineIP">10.112.78.23</Properties>
+				<Properties key="HdfsUserName">hdfs</Properties>
+				<Properties key="HdfsPassword">hdfs</Properties>
+			</DataSourceDetail>
+		</DataSource>
+	</DataSources>
+
+</Analysis>
