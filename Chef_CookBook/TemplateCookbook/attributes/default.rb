@@ -1,3 +1,0 @@
-
-
-default['project']['name']="Aricloud"
